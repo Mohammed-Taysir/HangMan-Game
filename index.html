@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HangMan Game</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="game">
+        <div class="container">
+            <div class="header">
+                <span class="logo">HangMan Game</span>
+                <span class = "category">Word From: <span></span></span>
+            </div>
+        </div>
+        <div class="container row">
+            <div class="draw">
+                <div class="draw-content">
+                    <div class="stand"></div>
+                    <div class="hang"></div>
+                    <div class="rop"></div>
+                    <div class="head"></div>
+                    <div class="body"></div>
+                    <div class="hands"></div>
+                    <div class="legs"></div>
+                </div>
+            </div>
+            <div class="letters-box">
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="keyboard">
+                
+            </div>
+        </div>
+    </div>
+
+    <audio id = "success" src="./sounds/success-1-6297.mp3" preload="auto"></audio>
+    <audio id = "fail" src="./sounds/fail-234710.mp3" preload="auto"></audio>
+
+    <!-- Sweet Alert Library  -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Axios Library  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!-- Main js File  -->
+    <script src = "./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header .logo {
+        font-size: 30px;
+    }
+}
+
+.header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #009873;
+}
+
+.header .category {
+    font-size: 18px;
+    color: #009681;
+}
+
+.header .category span {
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+@media(max-width: 1115px) {
+    .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.row .draw {
+    background-color: #f8f8f8;
+    width: 25%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .row .draw {
+        height: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row .draw {
+        height: 200px;
+    }
+}
+
+@media (max-width: 1115px) {
+    .row .draw {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+.row .draw .draw-content {
+    width : 80px;
+    border-bottom: 4px solid #222;
+    height: 80%;
+    position: relative;
+}
+
+.row .draw .draw-content .stand {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: #222;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.row .draw .draw-content div.wrong-1 {
+    display: block;
+}
+
+.row .draw .draw-content div.wrong-2 {
+    display: block;
+}
+
+.row .draw .draw-content div.wrong-3 {
+    display: block;
+}
+
+.row .draw .draw-content div.wrong-4 {
+    display: block;
+}
+
+.row .draw .draw-content div.wrong-5 {
+    display: block;
+}
+
+.row .draw .draw-content div.wrong-6 {
+    display: block;
+}
+
+.row .draw .draw-content div.wrong-7 {
+    display: block;
+}
+
+.row .draw .draw-content .hang {
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: #222;
+    left: 40px;
+    top: 10px;
+    display: none;
+}
+
+.row .draw .draw-content .rop {
+    display: none;
+}
+
+.row .draw .draw-content .rop::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    background-color: #222;
+    right: -41px;
+    top: 10px;
+}
+
+@media (max-width: 768px) {
+    .row .draw .draw-content .rop::before {
+        height: 25px;
+    }
+}
+
+.row .draw .draw-content .rop::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 2px dashed #222;
+    border-radius: 50%;
+    top: 50px;
+    right: -68px;
+}
+
+@media (max-width: 768px) {
+    .row .draw .draw-content .rop::after {
+        width: 50px;
+        height: 50px;
+        top: 35px;
+    }
+}
+
+.row .draw .draw-content .head {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    right: -61px;
+    top: 57px;
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .row .draw .draw-content .head {
+        width: 40px;
+        height: 40px;
+        top: 42px;
+        right: -61px;
+    }
+}
+
+.row .draw .draw-content .body {
+    height: 98px;
+    width: 4px;
+    background-color: #222;
+    position: absolute;
+    right: -41px;
+    top: 106px;
+    display: none;
+}
+
+
+@media (max-width: 992px) {
+    .row .draw .draw-content .body {
+        height: 65px;
+        top: 115px
+    }
+}
+.row .draw .draw-content .hands {
+    display: none;
+}
+
+.row .draw .draw-content .legs {
+    display: none;
+}
+
+.row .draw .draw-content .hands::before,
+.row .draw .draw-content .hands::after,
+.row .draw .draw-content .legs::before,
+.row .draw .draw-content .legs::after{
+    content: "";
+    height: 4px;
+    width: 65px;
+    background-color: #222;
+    position: absolute;
+}
+
+.row .draw .draw-content .hands::before {
+    top: 59%;
+    right: -42px;
+    transform: rotate(30deg);
+}
+
+.row .draw .draw-content .hands::after {
+    top: 59%;
+    right: -101px;
+    transform: rotate(-30deg);
+}
+
+.row .draw .draw-content .legs::before {
+    top: 86%;
+    right: -42px;
+    transform: rotate(-30deg);
+}
+
+.row .draw .draw-content .legs::after {
+    top: 86%;
+    right: -101px;
+    transform: rotate(30deg);
+}
+
+.letters-box {
+    flex: 1;
+    height: 100px;
+    background-color: #f8f8f8;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1115px) {
+    .letters-box {
+        padding: 20px;
+        max-width: 100%;
+    }
+    
+}
+
+.letters-box span {
+    background-color: white;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.letters-box span.space {
+    background-color: transparent;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width: 768px) {
+    .keyboard {
+        width: 100%;
+    }
+}
+
+.keyboard span {
+    width: 40px;
+    height: 40px;
+    background-color: #009681;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.keyboard span.clicked {
+    pointer-events: none;
+    visibility: hidden;
+}

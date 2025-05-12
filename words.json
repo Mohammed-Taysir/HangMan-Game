@@ -1,0 +1,49 @@
+{
+  "categories": {
+    "programming": [
+      "variable",
+      "function",
+      "loop",
+      "compiler",
+      "debugger",
+      "JavaScript",
+      "Python",
+      "algorithm"
+    ],
+    "actors": [
+      "Tom Hanks",
+      "Leonardo DiCaprio",
+      "Emma Watson",
+      "Morgan Freeman",
+      "Scarlett Johansson"
+    ],
+    "countries": [
+      "Jordan",
+      "France",
+      "Japan",
+      "Brazil",
+      "Egypt"
+    ],
+    "animals": [
+      "lion",
+      "elephant",
+      "giraffe",
+      "panda",
+      "tiger"
+    ],
+    "tools": [
+      "hammer",
+      "screwdriver",
+      "wrench",
+      "drill",
+      "saw"
+    ],
+    "sports": [
+      "football",
+      "basketball",
+      "tennis",
+      "swimming",
+      "boxing"
+    ]
+  }
+}
