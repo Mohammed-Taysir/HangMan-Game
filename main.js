@@ -1,3 +1,5 @@
+// English Letters abcdefghijklmnopqrstuvwxyz 
+
 let keyboardLetters = Array.from("abcdefghijklmnopqrstuvwxyz");
 let keyboard = document.querySelector(".keyboard");
 let wrong = 0;
@@ -29,6 +31,7 @@ async function getWords() {
 }
 
 function handleClickEvent(randomWord) {
+    console.log(randomWord);
     document.addEventListener("click", (e) => {
         if(e.target.className === "box-letter" && wrong !== 7){
             const clickedLetter = e.target.textContent.toLowerCase();

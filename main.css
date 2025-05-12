@@ -69,22 +69,20 @@ body {
     align-items: center;
 }
 
-@media (max-width: 992px) {
-    .row .draw {
-        height: 240px;
-    }
-}
 
-@media (max-width: 768px) {
-    .row .draw {
-        height: 200px;
-    }
-}
+
+
 
 @media (max-width: 1115px) {
     .row .draw {
         width: 50%;
         margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .row .draw {
+        width: 100%;
     }
 }
 
@@ -157,11 +155,7 @@ body {
     top: 10px;
 }
 
-@media (max-width: 768px) {
-    .row .draw .draw-content .rop::before {
-        height: 25px;
-    }
-}
+
 
 .row .draw .draw-content .rop::after {
     content: "";
@@ -174,13 +168,7 @@ body {
     right: -68px;
 }
 
-@media (max-width: 768px) {
-    .row .draw .draw-content .rop::after {
-        width: 50px;
-        height: 50px;
-        top: 35px;
-    }
-}
+
 
 .row .draw .draw-content .head {
     position: absolute;
@@ -193,14 +181,7 @@ body {
     display: none;
 }
 
-@media(max-width: 768px) {
-    .row .draw .draw-content .head {
-        width: 40px;
-        height: 40px;
-        top: 42px;
-        right: -61px;
-    }
-}
+
 
 .row .draw .draw-content .body {
     height: 98px;
@@ -213,12 +194,6 @@ body {
 }
 
 
-@media (max-width: 992px) {
-    .row .draw .draw-content .body {
-        height: 65px;
-        top: 115px
-    }
-}
 .row .draw .draw-content .hands {
     display: none;
 }
